@@ -103,8 +103,14 @@
 
                   </div>
                   <div class="col-6 col-sm-4 col-md-4 col-lg-4 profile-container">
-                    <img src="img/profile.png"/>
+                    <div class="profile-img">
+                      <img src="img/profile.png"/>
+                      <button type="button" class="btn btn-light modalButt" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-angle-right"></i>
+                      </button>
+                    </div>
                     <h4>Member name</h4>
+                    <p>Pretty title</p>
                   </div>
                   <div class="col-6 col-sm-4 col-md-4 col-lg-4 profile-container">
                     <img src="img/profile.png"/>
@@ -136,14 +142,20 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div class="modal-header profile">
+              <h5 class="modal-title" id="exampleModalLabel">Member name</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+
+              My contributions to this project ...
+              <p class="text-center">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
