@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Raleway');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 12pt;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/*
+****************** HEADER *********************************
+*/
+.header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background: url('../img/bg1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 1;
+}
+.header:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+.header .overlay {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+.header .title {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*
+****************** SECTIONS ********************************
+*/
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*
+****************** PROCESS *********************************
+*/
+
+/*
+****************** TEAM *********************************
+*/
+.profile-container {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 0;
+}
+.profile-container img {
+  max-width: 80%;
+  border-radius: 100%;
+}
