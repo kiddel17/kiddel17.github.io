@@ -19,6 +19,12 @@ h1, h2, h3, h4 {
 .btn {
   cursor: pointer;
 }
+img {
+  max-width: 100%;
+}
+a, a:visited, a:hover {
+  color: #17a2b8;
+}
 
 /*
 ****************** HEADER *********************************
@@ -65,18 +71,92 @@ h1, h2, h3, h4 {
   font-family: inherit;
 }
 
+.btn-turq {
+  color: white;
+  background-color: LightSeaGreen;
+  border-color: LightSeaGreen; /* 32 178 170 */
+}
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(32,178,170,.5);
+}
+.btn-turq:hover {
+  background-color: rgb(0,139,139);
+}
+.btn-turq:not([disabled]):not(.disabled).active, .btn-turq:not([disabled]):not(.disabled):active, .show>.btn-turq.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(0,139,139);
+    border-color: rgb(0,139,139);
+    box-shadow: 0 0 0 0.2rem rgba(23,162,184,.5);
+}
+
 /*
 ****************** SECTIONS ********************************
 */
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
+.section-process {
+  background: #f5f5f5;
+}
+
+/*
+****************** ABOUT *********************************
+*/
+.about-img {
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  margin-left: 10%;
+  margin-right: auto;
+  border-radius: 100%;
+  background-color: sandybrown;
+  background: url('../img/vr2.jpg');
+  background-size: cover;
+}
+.about-img::after {
+  padding-top: 100%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+.about-img img {
+  display: none;
+}
+
 
 /*
 ****************** PROCESS *********************************
 */
+.process-pointer {
+  background-color: LightSeaGreen;
+  color: white;
+  position: relative;
+  max-width: 300px;
+  width: 80%;
+  height: 110px;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.process-pointer::after {
+  content: '';
+  height: 78px;
+  width: 78px;
+  position: absolute;
+  left: 100%;
+  top: 16px;
+  margin-left: -39px;
+  background: LightSeaGreen;
+  transform: rotate(45deg);
+}
+.process-pointer h3 {
+  line-height: 110px;
+  z-index: 3;
+  position: relative;
+}
 
 /*
 ****************** TEAM *********************************
@@ -114,4 +194,13 @@ h1, h2, h3, h4 {
 .modal-header,
 .modal-footer {
   border: none;
+}
+
+/*
+****************** FOOTER *********************************
+*/
+.footer {
+  background: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
