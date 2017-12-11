@@ -76,11 +76,15 @@ a, a:visited, a:hover {
   background-color: LightSeaGreen;
   border-color: LightSeaGreen; /* 32 178 170 */
 }
+a.btn-turq:visited {
+  color: white;
+}
 .btn-info.focus, .btn-info:focus {
     box-shadow: 0 0 0 0.2rem rgba(32,178,170,.5);
 }
 .btn-turq:hover {
   background-color: rgb(0,139,139);
+  border-color: rgb(0,139,139);
 }
 .btn-turq:not([disabled]):not(.disabled).active, .btn-turq:not([disabled]):not(.disabled):active, .show>.btn-turq.dropdown-toggle {
     color: #fff;
@@ -166,9 +170,22 @@ a, a:visited, a:hover {
   text-align: center;
   padding: 30px 0;
 }
+
 .profile-img {
+  background: gray;
+  width: 80%;
   position: relative;
+  display: inline-block;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center center;
 }
+.profile-img::after {
+  padding-top: 100%;
+  display: block;
+  content: '';
+}
+.profile-img img { display: none; }
 .profile-img .modalButt {
   font-size: 1.3em;
   line-height: 100%;
